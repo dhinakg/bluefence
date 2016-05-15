@@ -1,12 +1,28 @@
-# bluefence
-A DIY BlueProximity alternative.
+# Bluefence
+A BlueProximity alternative written in python.
 
-I was about to install BlueProximity on my Freya desktop and end up with bunch of trouble, so I decided to build my own version of BlueProximity.
+## Usage
+Use a MAC address, this does not need the device to be connected
 
-This program will scan for particular bluetooth device by its MAC address and will perform a specific task when the device is out of range, or when it's back in range.
+`python bluefence.py MAC_ADDR`
 
-This is the first working prototype, DO NOT expect much.
+Use the RSSI to check for distance and set a maximum distance
 
+`python bluefence.py -d 5 MAC_ADDR`
 
-### Version Info
-0.1 Aug 27 2015: First working prototype
+Try using the verbose mode:
+
+`python bluefence.py --verbose MAC_ADDR`
+
+Check the help for more help using
+
+`python bluefence.py --help`
+
+## Functions
+- Scan for devices with the MAC address
+- Scan for a devices distance using the RSSI
+- Execute a command if distance is too large
+
+### Credits
+- Blueproximity for the RSSI part
+- Bluefence for the basis
