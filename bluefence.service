@@ -1,0 +1,9 @@
+[Unit]
+Description=Bluefence service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/bin/python bluefence.py -v -o -d 4 -w ADDR 
+
+[Install]
+WantedBy=bluetooth.target
