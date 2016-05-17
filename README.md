@@ -27,6 +27,11 @@ A BlueProximity alternative written in python.
 - Blueproximity for the RSSI part
 - Bluefence for the basis
 
+## TODO
+- List dependencies
+- Create PKGBUILD
+- Config load from /etc
+
 ## Copyright
 
 Permission is hereby granted, free of charge, to any person obtaining a
